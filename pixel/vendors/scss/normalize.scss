@@ -1,43 +1,4 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-@font-face {
-	font-family: RobotoBold;
-	src: url(../fonts/Roboto-Bold.eot);
-	src: url(../fonts/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Bold.otf) format("opentype"), url(../fonts/Roboto-Bold.svg) format("svg"), url(../fonts/Roboto-Bold.ttf) format("truetype"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.woff2) format("woff2");
-	font-weight: 700;
-	font-style: normal
-}
-
-@font-face {
-	font-family: Roboto;
-	src: url(../fonts/Roboto-Regular.eot);
-	src: url(../fonts/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular.otf) format("opentype"), url(../fonts/Roboto-Regular.svg) format("svg"), url(../fonts/Roboto-Regular.ttf) format("truetype"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.woff2) format("woff2");
-	font-weight: 400;
-	font-style: normal
-}
-
-:root {
-    --blue: #2760a3;
-    --orange: #f16623;
-    --red: #f30;
-    --green: #529839;
-    --yellow: #eda550;
-    --dark:#333;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --teal: #20c9a6;
-    --cyan: #36b9cc;
-    --white: #fff;
-    --gray: #858796;
-    --gray-dark: #5a5c69;
-    --primary: #4e73df;
-    --secondary: #858796;
-    --success: #1cc88a;
-    --info: #36b9cc;
-    --warning: #f6c23e;
-    --danger: #e74a3b;
-    --light: #f8f9fc;
-}
 
 /* Document
    ========================================================================== */
@@ -61,7 +22,8 @@
   
   body {
     margin: 0;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
+    font-size: $font-size-base;
   }
   
   /**

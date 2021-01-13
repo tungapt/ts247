@@ -1,3 +1,8 @@
-@import "vendors/scss/normalize.scss";                   // reset css.
-@import "vendors/scss/flexboxgrid.scss";                  // flex grid layout.
-@import "components/buttons"
+@import "utils/variables";
+@import "utils/path";
+@import "vendors/scss/normalize.scss";
+@import "vendors/scss/flexboxgrid.scss";
+@import "vendors/font-awesome/scss/font-awesome.scss";                            
+@import "components/buttons";
+@import "components/typography";
+@import "layout/nav.scss";

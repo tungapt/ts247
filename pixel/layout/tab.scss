@@ -1,0 +1,35 @@
+.tabs {
+    display: flex;
+    position: relative;
+    .tab {
+        label {
+            background: #eee; 
+            padding: 0.5em 1em; 
+            border: 1px solid #ccc; 
+            cursor: pointer;
+            display: block;
+        }
+        .content {
+            display:none;
+            position: absolute;
+            width: 100%;
+            top: 32px;
+            left:0;
+            box-sizing: border-box;
+            padding: 0.5em;
+        }
+
+    }
+    input[type=radio] {
+        display: none;
+    }
+    [type=radio]:checked ~ label {
+        background: white;
+        border-bottom: 1px solid white;
+        z-index: 2;
+    }
+    [type=radio]:checked ~ label ~ .content {
+        display: block;
+    }
+}
+

@@ -4471,4 +4471,36 @@ template {
   overflow: visible;
 }
 
+.tabs {
+  display: flex;
+  position: relative;
+}
+.tabs .tab label {
+  background: #eee;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: block;
+}
+.tabs .tab .content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+.tabs input[type=radio] {
+  display: none;
+}
+.tabs [type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+.tabs [type=radio]:checked ~ label ~ .content {
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */
